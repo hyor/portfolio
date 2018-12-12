@@ -37,7 +37,7 @@ header{
 }//header
 
 
-#content{max-width:1400px; margin:0 auto;
+#content{max-width:1400px; margin:0 auto; position:relative; background:#dc1212;
   .main_view{width:80%;
     .view{
       img{width:100%; height:100%;}
@@ -45,6 +45,10 @@ header{
   }
 }
 
+#content #content_main .delivery_w{position:absolute; top:0; left:80%; width:20%;}
+#content #content_main .delivery_w p{padding:20px 10px 20px 20px; display:inline-block; text-align:center;}
+#content #content_main .delivery_w img{width:20%}
+#content #content_main .delivery_w p .mcd{font-family:'Noto Sans KR', sans-serif; font-size:25px; font-weight:bold; color:#ffbd11;}
 #content{
   .delivery{ margin-top:-2px;width:50%; background:#dc1212; font-family:'Noto Sans KR', 'sans-serif';
     float:left; display:flex; flex-direction:row;
