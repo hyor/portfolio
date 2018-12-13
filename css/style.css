@@ -86,11 +86,25 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 .enjoy_view .enjoy_slider { font-size: 0; }
 
-.enjoy_view .enjoy_slider img { width: 260px; }
+.enjoy_view .enjoy_slider img { width: 268px; }
 
-.enjoy_view .enjoy_slider li { display: inline-block; width: 260px; float: left !important; }
+.enjoy_view .enjoy_slider li { padding: 20px 0 70px; }
 
-.bx-wraper { margin: 0 auto; }
+.bx-wrapper { margin: 0 auto; position: relative; }
+
+.bx-controls-direction a { width: 30px; height: 30px; position: absolute; top: 50%; margin-top: -5.5px; border: 3px solid rgba(255, 255, 255, 0.7); border-width: 3px 3px 0 0; }
+
+.bx-controls-direction .bx-prev { left: -40px; transform: rotate(-135deg); }
+
+.bx-controls-direction .bx-next { right: -10px; transform: rotate(45deg); }
+
+.bx-pager { position: absolute; bottom: 10px; left: 50%; z-index: 60; transform: translateX(-50%); font-size: 0; }
+
+.bx-pager div { float: left; margin: 0 5px; }
+
+.bx-pager a { width: 6px; height: 6px; background: #000; opacity: .2; text-indent: -9999px; border-radius: 50%; display: block; }
+
+.bx-pager a.active { opacity: 1; }
 
 footer { background: #2C2A29; }
 
