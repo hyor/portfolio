@@ -90,6 +90,8 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 .enjoy_view .enjoy_slider li { display: inline-block; width: 260px; float: left !important; }
 
+.bx-wraper { margin: 0 auto; }
+
 footer { background: #2C2A29; }
 
 footer .footer_inner { margin: 0 auto; width: 1000px; background: #2C2A29; color: #ccc; padding: 15px 0; font-size: 12px; font-family: 'Noto Sans KR', 'sans-serif'; text-align: center; line-height: 30px; }
