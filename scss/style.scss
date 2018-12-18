@@ -73,7 +73,7 @@ header{
 }
 
 #enjoy{background:#2c251e;
-  p{text-align:center; font-family:'Noto Sans KR', 'sans-serif'; font-weight:bold; color:#fff; font-size:25px; padding:80px;}
+  h3{text-align:center; font-family:'Noto Sans KR', 'sans-serif'; font-weight:bold; color:#fff; font-size:25px; padding:80px;}
 }//enjoy
 
 .enjoy_view .enjoy_slider{font-size:0;}
@@ -81,17 +81,43 @@ header{
 .enjoy_view .enjoy_slider li{padding:20px 0 70px;}
 .bx-wrapper{margin:0 auto; position:relative;}
 
-.bx-controls-direction{
+.enjoy_view .bx-controls-direction{
   a{width:30px; height:30px; position:absolute; top:50%; margin-top:-5.5px;
   border:3px solid rgba(255,255,255,.7); border-width:3px 3px 0 0;}
   .bx-prev{left:-40px; transform:rotate(-135deg);}
   .bx-next{right:-10px; transform:rotate(45deg);}
 }//bx-controls-direction
 
-.bx-pager{position:absolute; bottom:10px; left:50%; z-index:60;
+.enjoy_view .bx-pager{position:absolute; bottom:10px; left:50%; z-index:60;
 transform:translateX(-50%); font-size:0;
   div{float:left; margin:0 5px;}
-  a{width:6px; height:6px; background:#000; opacity:.2;
+  a{width:6px; height:6px; background:#fff; opacity:.2;
+  text-indent:-9999px; border-radius:50%; display:block;}
+  a.active{opacity:1;}
+}
+
+#menu{
+  h3{text-align:center; font-family:'Noto Sans KR', 'sans-serif'; font-weight:bold; color:#333; font-size:30px; padding:80px 80px 25px 80px;}
+  p{text-align:center; padding-bottom:20px;
+  a{text-decoration:none; color: #222; font-family:'Noto Sans KR', 'sans-serif'; font-weight:400;}
+    }
+  .menu_slider{
+  margin:0 auto; position:relative;
+  }
+}//#menu
+.menu_view .menu_slider li{padding:20px 0 70px;}
+.menu_view .menu_slider li a{font-size:12px; text-align:center; }
+#menu .bx-controls-direction{
+  a{width:30px; height:30px; position:absolute; top:50%; margin-top:-5.5px;
+  border:3px solid rgba(0,0,0,.7); border-width:3px 3px 0 0;}
+  .bx-prev{left:-40px; transform:rotate(-135deg);}
+  .bx-next{right:-10px; transform:rotate(45deg);}
+}//bx-controls-direction
+
+#menu .bx-pager{position:absolute; bottom:10px; left:50%; z-index:60;
+transform:translateX(-50%); font-size:0;
+  div{float:left; margin:0 5px;}
+  a{width:6px; height:6px; background:#222; opacity:.2;
   text-indent:-9999px; border-radius:50%; display:block;}
   a.active{opacity:1;}
 }

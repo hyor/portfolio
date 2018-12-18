@@ -82,7 +82,7 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 #enjoy { background: #2c251e; }
 
-#enjoy p { text-align: center; font-family: 'Noto Sans KR', 'sans-serif'; font-weight: bold; color: #fff; font-size: 25px; padding: 80px; }
+#enjoy h3 { text-align: center; font-family: 'Noto Sans KR', 'sans-serif'; font-weight: bold; color: #fff; font-size: 25px; padding: 80px; }
 
 .enjoy_view .enjoy_slider { font-size: 0; }
 
@@ -92,19 +92,45 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 .bx-wrapper { margin: 0 auto; position: relative; }
 
-.bx-controls-direction a { width: 30px; height: 30px; position: absolute; top: 50%; margin-top: -5.5px; border: 3px solid rgba(255, 255, 255, 0.7); border-width: 3px 3px 0 0; }
+.enjoy_view .bx-controls-direction a { width: 30px; height: 30px; position: absolute; top: 50%; margin-top: -5.5px; border: 3px solid rgba(255, 255, 255, 0.7); border-width: 3px 3px 0 0; }
 
-.bx-controls-direction .bx-prev { left: -40px; transform: rotate(-135deg); }
+.enjoy_view .bx-controls-direction .bx-prev { left: -40px; transform: rotate(-135deg); }
 
-.bx-controls-direction .bx-next { right: -10px; transform: rotate(45deg); }
+.enjoy_view .bx-controls-direction .bx-next { right: -10px; transform: rotate(45deg); }
 
-.bx-pager { position: absolute; bottom: 10px; left: 50%; z-index: 60; transform: translateX(-50%); font-size: 0; }
+.enjoy_view .bx-pager { position: absolute; bottom: 10px; left: 50%; z-index: 60; transform: translateX(-50%); font-size: 0; }
 
-.bx-pager div { float: left; margin: 0 5px; }
+.enjoy_view .bx-pager div { float: left; margin: 0 5px; }
 
-.bx-pager a { width: 6px; height: 6px; background: #000; opacity: .2; text-indent: -9999px; border-radius: 50%; display: block; }
+.enjoy_view .bx-pager a { width: 6px; height: 6px; background: #fff; opacity: .2; text-indent: -9999px; border-radius: 50%; display: block; }
 
-.bx-pager a.active { opacity: 1; }
+.enjoy_view .bx-pager a.active { opacity: 1; }
+
+#menu h3 { text-align: center; font-family: 'Noto Sans KR', 'sans-serif'; font-weight: bold; color: #333; font-size: 30px; padding: 80px 80px 25px 80px; }
+
+#menu p { text-align: center; padding-bottom: 20px; }
+
+#menu p a { text-decoration: none; color: #222; font-family: 'Noto Sans KR', 'sans-serif'; font-weight: 400; }
+
+#menu .menu_slider { margin: 0 auto; position: relative; }
+
+.menu_view .menu_slider li { padding: 20px 0 70px; }
+
+.menu_view .menu_slider li a { font-size: 12px; text-align: center; }
+
+#menu .bx-controls-direction a { width: 30px; height: 30px; position: absolute; top: 50%; margin-top: -5.5px; border: 3px solid rgba(0, 0, 0, 0.7); border-width: 3px 3px 0 0; }
+
+#menu .bx-controls-direction .bx-prev { left: -40px; transform: rotate(-135deg); }
+
+#menu .bx-controls-direction .bx-next { right: -10px; transform: rotate(45deg); }
+
+#menu .bx-pager { position: absolute; bottom: 10px; left: 50%; z-index: 60; transform: translateX(-50%); font-size: 0; }
+
+#menu .bx-pager div { float: left; margin: 0 5px; }
+
+#menu .bx-pager a { width: 6px; height: 6px; background: #222; opacity: .2; text-indent: -9999px; border-radius: 50%; display: block; }
+
+#menu .bx-pager a.active { opacity: 1; }
 
 footer { background: #2C2A29; }
 
