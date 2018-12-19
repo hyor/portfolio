@@ -82,7 +82,7 @@ header{
 .bx-wrapper{margin:0 auto; position:relative;}
 
 .enjoy_view .bx-controls-direction{
-  a{width:30px; height:30px; position:absolute; top:50%; margin-top:-5.5px;
+  a{width:30px; height:30px; position:absolute; top:50%; margin-top:-15px;
   border:3px solid rgba(255,255,255,.7); border-width:3px 3px 0 0;}
   .bx-prev{left:-40px; transform:rotate(-135deg);}
   .bx-next{right:-10px; transform:rotate(45deg);}
@@ -105,10 +105,10 @@ transform:translateX(-50%); font-size:0;
   margin:0 auto; position:relative;
   }
 }//#menu
-.menu_view .menu_slider li{padding:20px 0 70px;}
-.menu_view .menu_slider li a{font-size:12px; text-align:center; }
+.menu_view .menu_slider li{padding:20px 0 70px; text-align:center;}
+.menu_view .menu_slider li a{font-size:12px; text-decoration:none; color:#353535; font-weight:bold;}
 #menu .bx-controls-direction{
-  a{width:30px; height:30px; position:absolute; top:50%; margin-top:-5.5px;
+  a{width:30px; height:30px; position:absolute; top:50%; margin-top:-15px;
   border:3px solid rgba(0,0,0,.7); border-width:3px 3px 0 0;}
   .bx-prev{left:-40px; transform:rotate(-135deg);}
   .bx-next{right:-10px; transform:rotate(45deg);}
@@ -120,7 +120,26 @@ transform:translateX(-50%); font-size:0;
   a{width:6px; height:6px; background:#222; opacity:.2;
   text-indent:-9999px; border-radius:50%; display:block;}
   a.active{opacity:1;}
-}
+}//#menu .bx-pager
+
+.mcdrive{
+  min-height:500px; background:url('../images/mcdrive.jpg');
+  background-attachment: fixed; background-size:cover; position:relative;
+  .mcdrive_ani{
+    h4{font-size:65px; font-style: italic; font-weight:bold; color:#fff; font-family:'Noto Sans KR', 'sans-serif';
+      margin-bottom:35px; transform:translateX(800px); transition:1s}//h4
+      span{font-size: 25px; color:#fff; font-family:'Noto Sans KR', 'sans-serif'; transform:translateX(800px); transition:1.3s}
+  }//mcdrive_info
+  .mcdrive_info{
+    position:absolute; bottom:40px; right:80px;
+    p{padding:15px 0; background:#ffbd12; text-align:center; width:180px; margin-top:35px; border-radius:50px;
+      a{font-size:18px; color:#fff; text-decoration:none; font-weight:bold;
+      }//a
+    }//p
+  }//mcdrive_info
+}//.mcdrive
+
+.mcdrive_info.active h4{transform:translateX(0);}
 
 footer{background:#2C2A29;
   .footer_inner{
