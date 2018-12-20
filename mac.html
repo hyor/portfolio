@@ -10,7 +10,15 @@
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script src="js/jquery.scrolltogiveclass.js"></script>
+  <script src="js/jquery.tabmenu.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    $(function(){
+
+      $('.tab_menu').tabmenu({class:'selected', random:true, hover:true, mode:'fade'});
+
+    });
+  </script>
 
 </head>
 <body>
@@ -110,7 +118,11 @@
       </div>
     </div>
     <div class="delivery_w">
-        <p><img src="images/logo_ve.png"><span class="mcd">McDelivery</span></p>
+        <h3><img src="images/logo_ve.png"><span class="mcd">McDelivery</span></h3>
+        <p>맛있는 맥도날드가 생각날 때,</p>
+        <p>전화 한 통화로 간편하게!,</p>
+        <p>온라인 클릭으로 빠르게!</p>
+        <p>언제 어디서나 즐겨보세요</p>
     </div>
     </div>
 
@@ -147,28 +159,73 @@
   <!--//#enjoy-->
   <div id="menu">
     <h3>행복의 나라 메뉴</h3>
-    <p>
-    <a href="#">버거</a> ㅣ
-    <a href="#">세트메뉴</a> ㅣ
-    <a href="#">맥모닝</a> ㅣ
-    <a href="#">해피밀</a> ㅣ
-    <a href="#">맥카페</a>
-    </p>
-    <div class="menu_view">
-      <ul class="menu_slider clearfix">
-        <li><a href="#"><img src="images/menu01.png">골든 에그 치즈버거</a></li>
-        <li><a href="#"><img src="images/menu02.png">그릴드 머쉬룸 버거</a></li>
-        <li><a href="#"><img src="images/menu03.png">빅맥®BLT</a></li>
-        <li><a href="#"><img src="images/menu04.png">함박버거</a></li>
-        <li><a href="#"><img src="images/menu05.png">빅맥®</a></li>
-        <li><a href="#"><img src="images/menu06.png">메가맥</a></li>
-        <li><a href="#"><img src="images/menu07.png">1955버거</a></li>
-        <li><a href="#"><img src="images/menu08.png">더블1955버거</a></li>
-        <li><a href="#"><img src="images/menu09.png">맥스파이시 상하이버거</a></li>
-        <li><a href="#"><img src="images/menu10.png">슈슈버거</a></li>
-        <li><a href="#"><img src="images/menu11.png">슈비버거</a></li>
-        <li><a href="#"><img src="images/menu12.png">베이컨 토마토 디럭스버거</a></li>
+    <nav class="tab_menu">
+      <ul>
+        <li><a href=".menu_view">버거</a> ㅣ</li>
+        <li><a href=".set_view">세트메뉴</a> ㅣ</li>
+        <li><a href=".mac_view">맥모닝</a> ㅣ</li>
+        <li><a href=".cafe_view">맥카페</a></li>
       </ul>
+    </nav>
+    <div id="tab_contents">
+      <div class="menu_view">
+        <ul class="menu_slider">
+          <li><a href="#"><img src="images/menu01.png">골든 에그 치즈버거</a></li>
+          <li><a href="#"><img src="images/menu02.png">그릴드 머쉬룸 버거</a></li>
+          <li><a href="#"><img src="images/menu03.png">빅맥®BLT</a></li>
+          <li><a href="#"><img src="images/menu04.png">함박버거</a></li>
+          <li><a href="#"><img src="images/menu05.png">빅맥®</a></li>
+          <li><a href="#"><img src="images/menu06.png">메가맥</a></li>
+          <li><a href="#"><img src="images/menu07.png">1955버거</a></li>
+          <li><a href="#"><img src="images/menu08.png">더블1955버거</a></li>
+          <li><a href="#"><img src="images/menu09.png">맥스파이시 상하이버거</a></li>
+          <li><a href="#"><img src="images/menu10.png">슈슈버거</a></li>
+          <li><a href="#"><img src="images/menu11.png">슈비버거</a></li>
+          <li><a href="#"><img src="images/menu12.png">베이컨 토마토 디럭스버거</a></li>
+        </ul>
+      </div>
+      <div class="set_view">
+        <ul class="menu_slider">
+          <li><a href="#"><img src="images/set01.png">골든 에그 치즈버거</a></li>
+          <li><a href="#"><img src="images/set02.png">그릴드 머쉬룸 버거</a></li>
+          <li><a href="#"><img src="images/set03.png">빅맥®BLT</a></li>
+          <li><a href="#"><img src="images/set04.png">함박버거</a></li>
+          <li><a href="#"><img src="images/set05.png">빅맥®</a></li>
+          <li><a href="#"><img src="images/set06.png">메가맥</a></li>
+          <li><a href="#"><img src="images/set07.png">1955버거</a></li>
+          <li><a href="#"><img src="images/set08.png">더블1955버거</a></li>
+          <li><a href="#"><img src="images/set09.png">맥스파이시 상하이버거</a></li>
+          <li><a href="#"><img src="images/set10.png">슈슈버거</a></li>
+          <li><a href="#"><img src="images/set11.png">슈비버거</a></li>
+          <li><a href="#"><img src="images/set12.png">베이컨 토마토 디럭스버거</a></li>
+        </ul>
+      </div>
+      <div class="mac_view">
+        <ul class="menu_slider">
+          <li><a href="#"><img src="images/mac01.png">골든 에그 치즈버거</a></li>
+          <li><a href="#"><img src="images/mac02.png">그릴드 머쉬룸 버거</a></li>
+          <li><a href="#"><img src="images/mac03.png">빅맥®BLT</a></li>
+          <li><a href="#"><img src="images/mac04.png">함박버거</a></li>
+          <li><a href="#"><img src="images/mac05.png">빅맥®</a></li>
+          <li><a href="#"><img src="images/mac06.png">메가맥</a></li>
+          <li><a href="#"><img src="images/mac07.png">1955버거</a></li>
+          <li><a href="#"><img src="images/mac08.png">더블1955버거</a></li>
+        </ul>
+      </div>
+      <div class="cafe_view">
+        <ul class="menu_slider">
+          <li><a href="#"><img src="images/cafe01.png">골든 에그 치즈버거</a></li>
+          <li><a href="#"><img src="images/cafe02.png">그릴드 머쉬룸 버거</a></li>
+          <li><a href="#"><img src="images/cafe03.png">빅맥®BLT</a></li>
+          <li><a href="#"><img src="images/cafe04.png">함박버거</a></li>
+          <li><a href="#"><img src="images/cafe05.png">빅맥®</a></li>
+          <li><a href="#"><img src="images/cafe06.png">메가맥</a></li>
+          <li><a href="#"><img src="images/cafe07.png">1955버거</a></li>
+          <li><a href="#"><img src="images/cafe08.png">더블1955버거</a></li>
+          <li><a href="#"><img src="images/cafe09.png">맥스파이시 상하이버거</a></li>
+          <li><a href="#"><img src="images/cafe10.png">슈슈버거</a></li>
+        </ul>
+      </div>
     </div>
   </div>
   <section class="mcdrive">

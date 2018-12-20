@@ -44,7 +44,7 @@ header #gnb .gnb_inner > ul > li > .sub li a:hover { color: #dc1212; }
 
 header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
-#content { max-width: 1400px; margin: 0 auto; position: relative; background: #dc1212; }
+#content { max-width: 1400px; margin: 0 auto; position: relative; background: #dc1212; background-size: 400px; }
 
 #content .main_view { width: 80%; }
 
@@ -52,11 +52,13 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 #content #content_main .delivery_w { position: absolute; top: 0; left: 80%; width: 20%; }
 
-#content #content_main .delivery_w p { padding: 20px 10px 20px 20px; display: inline-block; text-align: center; }
+#content #content_main .delivery_w h3 { padding: 35px 10px 40px 20px; text-align: center; }
+
+#content #content_main .delivery_w p { color: #fff; font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 400; text-align: center; padding-bottom: 5px; }
 
 #content #content_main .delivery_w img { width: 20%; }
 
-#content #content_main .delivery_w p .mcd { font-family: 'Noto Sans KR', sans-serif; font-size: 25px; font-weight: bold; color: #ffbd11; }
+#content #content_main .delivery_w h3 .mcd { font-family: 'Noto Sans KR', sans-serif; font-size: 25px; font-weight: bold; color: #ffbd11; }
 
 #content .dd { display: none; }
 
@@ -106,17 +108,35 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 .enjoy_view .bx-pager a.active { opacity: 1; }
 
+#menu #tab_contents { max-width: 816px; margin: 0 auto; position: relative; height: 260px; }
+
+#menu #tab_contents .menu_view, #menu #tab_contents .set_view, #menu #tab_contents .mac_view, #menu #tab_contents .cafe_view { position: absolute; top: 0; left: 0; }
+
 #menu h3 { text-align: center; font-family: 'Noto Sans KR', 'sans-serif'; font-weight: bold; color: #333; font-size: 30px; padding: 80px 80px 25px 80px; }
 
-#menu p { text-align: center; padding-bottom: 20px; }
+#menu ul { text-align: center; margin-bottom: 20px; }
 
-#menu p a { text-decoration: none; color: #222; font-family: 'Noto Sans KR', 'sans-serif'; font-weight: 400; }
+#menu ul li { display: inline; }
+
+#menu ul li a { text-decoration: none; color: #222; font-family: 'Noto Sans KR', 'sans-serif'; font-weight: 400; }
 
 #menu .menu_slider { margin: 0 auto; position: relative; }
 
 .menu_view .menu_slider li { padding: 20px 0 70px; text-align: center; }
 
 .menu_view .menu_slider li a { font-size: 12px; text-decoration: none; color: #353535; font-weight: bold; }
+
+.set_view .menu_slider li { padding: 20px 0 70px; text-align: center; }
+
+.set_view .menu_slider li a { font-size: 12px; text-decoration: none; color: #353535; font-weight: bold; }
+
+.mac_view .menu_slider li { padding: 20px 0 70px; text-align: center; }
+
+.mac_view .menu_slider li a { font-size: 12px; text-decoration: none; color: #353535; font-weight: bold; }
+
+.cafe_view .menu_slider li { padding: 20px 0 70px; text-align: center; }
+
+.cafe_view .menu_slider li a { font-size: 12px; text-decoration: none; color: #353535; font-weight: bold; }
 
 #menu .bx-controls-direction a { width: 30px; height: 30px; position: absolute; top: 50%; margin-top: -15px; border: 3px solid rgba(0, 0, 0, 0.7); border-width: 3px 3px 0 0; }
 
@@ -144,7 +164,9 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 .mcdrive .mcdrive_info p a { font-size: 18px; color: #fff; text-decoration: none; font-weight: bold; }
 
-.mcdrive_info.active h4 { transform: translateX(0); }
+.mcdrive_ani.active h4 { transform: translateX(0); }
+
+.mcdrive_ani.active span { transform: translateX(0); }
 
 footer { background: #2C2A29; }
 
