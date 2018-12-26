@@ -50,7 +50,7 @@ header #btn .open_menu .xi-close { display: none; }
 
 header #btn .open_menu span { float: left; font-size: 10px; font-size: 10px; line-height: 1.1; padding: 2px 0 0 5px; }
 
-header #gnb { max-width: 1400px; margin: 0 auto; display: flex; justify-content: flex-end; }
+header #gnb { max-width: 1400px; margin: 0 auto; float: right; }
 
 header #gnb .gnb_inner { padding-right: 250px; }
 
@@ -223,11 +223,18 @@ footer .footer_inner { margin: 0 auto; max-width: 1000px; background: #2C2A29; c
   header #inner #btn .open_menu.active { z-index: 101; }
   header #inner #btn .open_menu.active .xi-bars { display: none; }
   header #inner #btn .open_menu.active .xi-close { display: block; }
+  header #inner .nav { display: none; } }
+
+@media (max-width: 760px) { header #inner #logo { margin-bottom: 15px; }
+  header #inner #logo h1 a { background: url("../images/mcdonalds-logo_02.jpg"); width: 110px; height: 30px; border-radius: 0%; }
+  header #inner #btn { display: block; }
+  header #inner #btn .open_menu.active { z-index: 101; }
+  header #inner #btn .open_menu.active .xi-bars { display: none; }
+  header #inner #btn .open_menu.active .xi-close { display: block; }
   header #inner .menu { position: fixed; width: 100%; height: 100%; z-index: 100; top: 0; left: 0; overflow: hidden; background: #000; padding: 0 50px; box-sizing: border-box; transition: all .2s ease-in-out; transform: translateY(-100%); visibility: hidden; }
   header #inner .menu .nav #gnb_top { margin-top: 20px; }
   header #inner .menu .nav #gnb_top ul { display: none; }
   header #inner .menu .nav #gnb_top .searchbox .search { display: none; }
-  header #gnb .gnb_inner ul { display: none; }
   #content .dd { display: block; }
   #enjoy h3 { padding: 20px; }
   #menu h3 { padding: 20px; } }
