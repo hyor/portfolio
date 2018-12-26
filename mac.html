@@ -15,7 +15,7 @@
   <script>
     $(function(){
 
-      $('.tab_menu').tabmenu({class:'selected', random:true, hover:true, mode:'fade'});
+      $('.tab_menu').tabmenu({class:'selected', random:true, hover:true, mode:'class'});
 
     });
   </script>
@@ -29,7 +29,7 @@
     <!--//상단 디자인 바-->
     <div id="inner" class="clearfix">
       <div id="logo"  class="clearfix">
-        <h1><a href="mac.html"><img src="images/mcdonalds-logo.jpg"></a></h1>
+        <h1><a href="mac.html">맥도날드</a></h1>
       </div>
       <div class="nav">
         <div id="gnb_top" class="clearfix">
@@ -39,7 +39,8 @@
             <li><a href="#">Find Store</a></li>
           </ul>
           <div class="searchbox">
-            <input type="text"  class="search"><input type="button" value="검색" class="searchbutton" />
+            <input type="text"  class="search">
+            <a href="#"><i class="xi-search"></i></a>
           </div>
         </div>
       </div>
@@ -130,7 +131,7 @@
     </div>
     </div>
 
-    <div class="dd">
+    <div class="dd clearfix">
       <div class="delivery clearfix">
         <h3>맥딜리버리 <span>McDelivery</span></h3>
         <p><a href="#">주문하러가기</a></p>

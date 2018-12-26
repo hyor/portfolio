@@ -1,3 +1,5 @@
+@import url(reset.css);
+@import url(xeicon.css);
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR&subset=korean");
 /*base*/
 .clearfix::after { content: ""; clear: both; display: block; }
@@ -8,7 +10,7 @@ header #inner { max-width: 1400px; margin: 0 auto; background: url("../images/to
 
 header #inner #logo { margin: 10px 0 0 10px; float: left; }
 
-header #inner #logo img { width: 80px; height: 80px; border-radius: 10%; }
+header #inner #logo a { display: inline-block; width: 80px; height: 80px; border-radius: 15px; text-indent: -9999px; background: url("../images/mcdonalds-logo.jpg") no-repeat; background-size: 100%; }
 
 header #inner .nav { padding-right: 290px; }
 
@@ -22,7 +24,7 @@ header #inner .nav #gnb_top .searchbox { display: flex; flex-direction: row; mar
 
 header #inner .nav #gnb_top .search { border: none; border-bottom: 1px solid #ccc; width: 100px; }
 
-header #inner .nav #gnb_top .searchbutton { margin-left: 2px; width: 40px; }
+header #inner .nav #gnb_top .open_menu { display: none; }
 
 header #gnb { max-width: 1400px; margin: 0 auto; display: flex; justify-content: flex-end; }
 
@@ -72,23 +74,23 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 #content .delivery { margin-top: -2px; width: 50%; background: #dc1212; font-family: 'Noto Sans KR', 'sans-serif'; float: left; display: flex; flex-direction: row; }
 
-#content .delivery h3 { font-size: 30px; color: #ffbd11; font-weight: bold; margin: 0 auto; text-align: center; line-height: 50px; }
+#content .delivery h3 { font-size: 20px; color: #ffbd11; font-weight: bold; margin: 0 auto; text-align: center; line-height: 50px; }
 
-#content .delivery h3 span { color: #fff; }
+#content .delivery h3 span { color: #fff; font-size: 14px; }
 
-#content .delivery p { padding-top: 10px; margin-right: 100px; }
+#content .delivery p { padding-top: 10px; float: right; margin-right: 10px; }
 
-#content .delivery p a { color: #fff; text-decoration: none; background: #ffbd11; border-radius: 10px; line-height: 30px; padding: 5px 5px; }
+#content .delivery p a { color: #fff; text-decoration: none; background: #ffbd11; border-radius: 10px; line-height: 30px; padding: 5px 5px; font-size: 14px; }
 
 #content .drive { margin-top: -2px; width: 50%; background: #ffbd11; font-family: 'Noto Sans KR', 'sans-serif'; float: left; display: flex; flex-direction: row; }
 
-#content .drive h3 { font-size: 30px; color: #dc1212; font-weight: bold; margin: 0 auto; text-align: center; line-height: 50px; }
+#content .drive h3 { font-size: 20px; color: #dc1212; font-weight: bold; margin: 0 auto; text-align: center; line-height: 50px; }
 
-#content .drive h3 span { color: #fff; }
+#content .drive h3 span { color: #fff; font-size: 14px; }
 
-#content .drive p { padding-top: 10px; margin-right: 100px; }
+#content .drive p { padding-top: 10px; float: right; margin-right: 10px; }
 
-#content .drive p a { color: #fff; text-decoration: none; background: #dc1212; border-radius: 10px; line-height: 30px; padding: 5px 5px; }
+#content .drive p a { color: #fff; text-decoration: none; background: #dc1212; border-radius: 10px; line-height: 30px; padding: 5px 5px; font-size: 14px; }
 
 #enjoy { background: #2c251e; }
 
@@ -117,6 +119,10 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 .enjoy_view .bx-pager a.active { opacity: 1; }
 
 #menu #tab_contents { max-width: 816px; margin: 0 auto; position: relative; height: 260px; }
+
+#menu #tab_contents > div { visibility: hidden; opacity: 0; transition: all .3s; }
+
+#menu #tab_contents > div.selected { visibility: visible; opacity: 1; }
 
 #menu #tab_contents .menu_view, #menu #tab_contents .set_view, #menu #tab_contents .mac_view, #menu #tab_contents .cafe_view { position: absolute; top: 0; left: 0; }
 
@@ -178,8 +184,24 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 footer { background: #2C2A29; }
 
-footer .footer_inner { margin: 0 auto; width: 1000px; background: #2C2A29; color: #ccc; padding: 15px 0; font-size: 12px; font-family: 'Noto Sans KR', 'sans-serif'; text-align: center; line-height: 30px; }
+footer .footer_inner { margin: 0 auto; max-width: 1000px; background: #2C2A29; color: #ccc; padding: 15px 0; font-size: 12px; font-family: 'Noto Sans KR', 'sans-serif'; text-align: center; line-height: 30px; }
 
 @media (max-width: 1200px) { header #inner { background: url(""); }
   header #inner .nav { padding: 0; }
-  header #gnb .gnb_inner { padding-right: 0; } }
+  header #gnb .gnb_inner { padding-right: 0; }
+  #content { background: none; }
+  #content .main_view { width: 100%; }
+  #content .delivery_w { display: none; } }
+
+@media (max-width: 760px) { header #inner #logo { margin-bottom: 15px; }
+  header #inner #logo h1 a { background: url("../images/mcdonalds-logo_02.jpg"); width: 110px; height: 30px; border-radius: 0%; }
+  header #inner .nav #gnb_top { margin-top: 20px; }
+  header #inner .nav #gnb_top ul { display: none; }
+  header #inner .nav #gnb_top .searchbox .search { display: none; }
+  header #gnb .gnb_inner ul { display: none; }
+  #content .dd { display: block; }
+  #enjoy h3 { padding: 20px; }
+  #menu h3 { padding: 20px; } }
+
+@media (max-width: 560px) { #content .dd .drive { width: 100%; }
+  #content .dd .delivery { width: 100%; } }
