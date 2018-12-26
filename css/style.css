@@ -54,11 +54,19 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 #content #content_main .delivery_w h3 { padding: 35px 10px 40px 20px; text-align: center; }
 
-#content #content_main .delivery_w p { color: #fff; font-family: 'Noto Sans KR', sans-serif; font-size: 13px; font-weight: 400; text-align: center; padding-bottom: 5px; }
-
 #content #content_main .delivery_w img { width: 20%; }
 
 #content #content_main .delivery_w h3 .mcd { font-family: 'Noto Sans KR', sans-serif; font-size: 25px; font-weight: bold; color: #ffbd11; }
+
+#content #content_main .delivery_w #address1 { margin: 5px 0 0 20px; width: 150px; }
+
+#content #content_main .delivery_w .delivery_info { font-family: 'Noto Sans KR', sans-serif; font-size: 14px; font-weight: 200; color: #fff; text-align: left; padding-left: 20px; word-break: keep-all; margin: 15px 0 20px; }
+
+#content #content_main .delivery_w > a { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; font-weight: 300; color: #fff; padding-left: 12px; }
+
+#content #content_main .delivery_w .btn { margin-top: 30px; text-align: center; }
+
+#content #content_main .delivery_w .btn a { width: 80px; background: #ffbd11; text-decoration: none; color: #fff; border-radius: 10px; padding: 10px; }
 
 #content .dd { display: none; }
 
@@ -171,3 +179,7 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 footer { background: #2C2A29; }
 
 footer .footer_inner { margin: 0 auto; width: 1000px; background: #2C2A29; color: #ccc; padding: 15px 0; font-size: 12px; font-family: 'Noto Sans KR', 'sans-serif'; text-align: center; line-height: 30px; }
+
+@media (max-width: 1200px) { header #inner { background: url(""); }
+  header #inner .nav { padding: 0; }
+  header #gnb .gnb_inner { padding-right: 0; } }
