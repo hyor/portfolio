@@ -6,6 +6,8 @@
 
 #top { height: 2px; width: 100%; background: #0e0e0e; }
 
+header { /*btn*/ }
+
 header #inner { max-width: 1400px; margin: 0 auto; background: url("../images/top_bg2.jpg") no-repeat; background-position: 98% 0; }
 
 header #inner #logo { margin: 10px 0 0 10px; float: left; }
@@ -20,11 +22,33 @@ header #inner .nav #gnb_top li { float: left; margin-left: 50px; }
 
 header #inner .nav #gnb_top li a { text-decoration: none; font-family: 'Noto Sans KR', 'sans-serif'; color: #2f1c11; font-size: 13px; }
 
-header #inner .nav #gnb_top .searchbox { display: flex; flex-direction: row; margin-left: 10px; }
+header #inner .nav #gnb_top .searchbox { margin-left: 10px; }
 
 header #inner .nav #gnb_top .search { border: none; border-bottom: 1px solid #ccc; width: 100px; }
 
 header #inner .nav #gnb_top .open_menu { display: none; }
+
+header #btn { float: right; margin-top: 12px; display: none; }
+
+header #btn li { float: left; }
+
+header #btn a { color: #353535; padding: 15px 5px; }
+
+header #btn a:hover { color: #ffbd11; }
+
+header #btn .open_search { position: relative; }
+
+header #btn .open_search .tip { position: absolute; background: #000; color: #353535; border-radius: 3px; white-space: nowrap; padding: 2px 8px; left: -12px; opacity: 0; visibility: hidden; transition: all .4s; }
+
+header #btn .open_search .tip::after { content: ''; position: absolute; top: -5px; left: 50%; margin-left: -5px; border-bottom: 5px solid transparent; border-left: 5px solid transparent; }
+
+header #btn .open_search:hover .tip { opacity: 1; visibility: visible; }
+
+header #btn .open_menu i { float: left; font-size: 30px; margin-top: -3px; }
+
+header #btn .open_menu .xi-close { display: none; }
+
+header #btn .open_menu span { float: left; font-size: 10px; font-size: 10px; line-height: 1.1; padding: 2px 0 0 5px; }
 
 header #gnb { max-width: 1400px; margin: 0 auto; display: flex; justify-content: flex-end; }
 
@@ -195,9 +219,14 @@ footer .footer_inner { margin: 0 auto; max-width: 1000px; background: #2C2A29; c
 
 @media (max-width: 760px) { header #inner #logo { margin-bottom: 15px; }
   header #inner #logo h1 a { background: url("../images/mcdonalds-logo_02.jpg"); width: 110px; height: 30px; border-radius: 0%; }
-  header #inner .nav #gnb_top { margin-top: 20px; }
-  header #inner .nav #gnb_top ul { display: none; }
-  header #inner .nav #gnb_top .searchbox .search { display: none; }
+  header #inner #btn { display: block; }
+  header #inner #btn .open_menu.active { z-index: 101; }
+  header #inner #btn .open_menu.active .xi-bars { display: none; }
+  header #inner #btn .open_menu.active .xi-close { display: block; }
+  header #inner .menu { position: fixed; width: 100%; height: 100%; z-index: 100; top: 0; left: 0; overflow: hidden; background: #000; padding: 0 50px; box-sizing: border-box; transition: all .2s ease-in-out; transform: translateY(-100%); visibility: hidden; }
+  header #inner .menu .nav #gnb_top { margin-top: 20px; }
+  header #inner .menu .nav #gnb_top ul { display: none; }
+  header #inner .menu .nav #gnb_top .searchbox .search { display: none; }
   header #gnb .gnb_inner ul { display: none; }
   #content .dd { display: block; }
   #enjoy h3 { padding: 20px; }
