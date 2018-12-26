@@ -223,7 +223,11 @@ footer .footer_inner { margin: 0 auto; max-width: 1000px; background: #2C2A29; c
   header #inner #btn .open_menu.active { z-index: 101; }
   header #inner #btn .open_menu.active .xi-bars { display: none; }
   header #inner #btn .open_menu.active .xi-close { display: block; }
-  header #inner .nav { display: none; } }
+  header #inner .nav { display: none; }
+  header #inner #gnb .gnb_inner { position: absolute; width: 100%; height: 100vh; background: #333; top: 57px; left: -100%; transition: .5s; }
+  header #inner #gnb .gnb_inner.active { left: 0; z-index: 101; }
+  header #inner #gnb .gnb_inner ul li { float: none; }
+  header #inner #gnb .gnb_inner ul li a { border-bottom: 1px solid rgba(0, 0, 0, 0.2); } }
 
 @media (max-width: 760px) { header #inner #logo { margin-bottom: 15px; }
   header #inner #logo h1 a { background: url("../images/mcdonalds-logo_02.jpg"); width: 110px; height: 30px; border-radius: 0%; }

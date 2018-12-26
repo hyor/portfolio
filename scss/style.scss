@@ -232,7 +232,10 @@ footer{background:#2C2A29;
   header #inner #btn .open_menu.active .xi-bars{display:none;}
   header #inner #btn .open_menu.active .xi-close{display:block;}
   header #inner .nav{display:none;}
-  header #inner #gnb{}
+  header #inner #gnb .gnb_inner{position:absolute; width:100%; height:100vh; background:#333; top:57px; left:-100%; transition:.5s;}
+  header #inner #gnb .gnb_inner.active{left:0; z-index:101;}
+  header #inner #gnb .gnb_inner ul li{float:none;}
+  header #inner #gnb .gnb_inner ul li a{border-bottom:1px solid rgba(0,0,0,.2);}
 }
 @media(max-width:760px){
   header{
