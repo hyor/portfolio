@@ -50,7 +50,7 @@ header #btn .open_menu .xi-close { display: none; }
 
 header #btn .open_menu span { float: left; font-size: 10px; font-size: 10px; line-height: 1.1; padding: 2px 0 0 5px; }
 
-header #gnb { max-width: 1400px; margin: 0 auto; float: right; }
+header #gnb { max-width: 1400px; margin: 0 auto; float: right; position: relative; }
 
 header #gnb .gnb_inner { padding-right: 250px; }
 
@@ -71,6 +71,26 @@ header #gnb .gnb_inner > ul > li > .sub li a { color: #353535; text-decoration: 
 header #gnb .gnb_inner > ul > li > .sub li a:hover { color: #dc1212; }
 
 header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
+
+header .sgnb_inner { opacity: 0; visibility: hidden; transition: .5s; position: absolute; left: -100%; font-family: 'Noto Sans KR', sans-serif; font-size: 12px; }
+
+header .sgnb_inner.active { width: 100%; height: 100%; }
+
+header .sgnb_inner.active .btn { font-size: 16px; line-height: 1; text-decoration: none; color: #ddd; padding: 20px; display: block; border: 1px solid #000; border-top: 0; box-shadow: 0 1px rgba(255, 255, 255, 0.2) inset; background: #333; position: relative; }
+
+header .sgnb_inner.active .btn::before, header .sgnb_inner.active .btn::after { content: ""; position: absolute; width: 12px; height: 3px; right: 20px; top: 50%; margin-top: 1.5px; background: #fff; transition: all .4s; }
+
+header .sgnb_inner.active .btn::before { transform: rotate(0deg); }
+
+header .sgnb_inner.active .btn::after { transform: rotate(90deg); }
+
+header .sgnb_inner.active .sub { display: none; }
+
+header .sgnb_inner.active .sub a { display: block; padding: 14px 30px; font-size: 15px; color: #777; background: #f1f1f1; border: 1px solid #ddd; border-top: 0; text-decoration: none; }
+
+header .sgnb_inner.active .selected .btn::before { transform: rotate(180deg); }
+
+header .sgnb_inner.active .selected .btn::after { transform: rotate(270deg); opacity: 0; }
 
 #content { max-width: 1400px; margin: 0 auto; position: relative; background: #dc1212; background-size: 400px; }
 
@@ -148,7 +168,7 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 #menu #tab_contents > div { visibility: hidden; opacity: 0; transition: all .3s; }
 
-#menu #tab_contents > div.selected { visibility: visible; opacity: 1; }
+#menu #tab_contents > div.selected_02 { visibility: visible; opacity: 1; }
 
 #menu #tab_contents .menu_view, #menu #tab_contents .set_view, #menu #tab_contents .mac_view, #menu #tab_contents .cafe_view { position: absolute; top: 0; left: 0; }
 
@@ -196,7 +216,7 @@ header #gnb .gnb_inner > ul > li:hover .sub { opacity: 1; visibility: visible; }
 
 .mcdrive { min-height: 500px; background: url("../images/mcdrive.jpg"); background-attachment: fixed; background-size: cover; position: relative; }
 
-.mcdrive .mcdrive_ani h4 { font-size: 65px; font-style: italic; font-weight: bold; color: #fff; font-family: 'Noto Sans KR', 'sans-serif'; margin-bottom: 35px; transform: translateX(150px); transition: 1s; }
+.mcdrive .mcdrive_ani h4 { font-size: 65px; font-style: italic; font-weight: bold; color: #fff; font-family: 'Noto Sans KR', 'sans-serif'; margin-bottom: 35px; transform: translateX(-800px); transition: 1s; }
 
 .mcdrive .mcdrive_ani span { font-size: 25px; color: #fff; font-family: 'Noto Sans KR', 'sans-serif'; transform: translateX(0px); transition: 1.3s; }
 
@@ -243,14 +263,17 @@ footer .footer_inner { margin: 0 auto; max-width: 1000px; background: #2C2A29; c
   header #inner .menu .nav #gnb_top { margin-top: 20px; }
   header #inner .menu .nav #gnb_top ul { display: none; }
   header #inner .menu .nav #gnb_top .searchbox .search { display: none; }
-  header #inner #gnb .gnb_inner #block { display: block; }
+  header #inner #gnb .gnb_inner { display: none; }
   header #inner #gnb .gnb_inner li { width: 100%; height: 45px; }
   header #inner #gnb .gnb_inner li a { color: #f2f2f2; line-height: 45px; height: 45px; }
   header #inner #gnb .gnb_inner li:hover .sub { opacity: 0; visibility: hidden; }
   header #inner #gnb .gnb_inner li:focus .sub { opacity: 1; visibility: visible; }
+  header .sgnb_inner.active { opacity: 1; visibility: visible; left: 0; z-index: 999; }
   #content .dd { display: block; }
   #enjoy h3 { padding: 20px; }
+  #enjoy .bx-prev, #enjoy .bx-next { display: none; }
   #menu h3 { padding: 20px; }
+  #menu .bx-prev, #menu .bx-next { display: none; }
   .mcdrive .mcdrive_ani h4 { transform: translateX(0); } }
 
 @media (max-width: 560px) { #content .dd .drive { width: 100%; }
