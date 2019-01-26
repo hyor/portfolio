@@ -203,7 +203,7 @@ transform:translateX(-50%); font-size:0;
   .mcdrive_ani{
     h4{font-size:65px; font-style: italic; font-weight:bold; color:#fff; font-family:'Noto Sans KR', 'sans-serif';
       margin-bottom:35px; transform:translateX(-800px); transition:1s}//h4
-      span{font-size: 25px; color:#fff; font-family:'Noto Sans KR', 'sans-serif'; transform:translateX(0px); transition:1.3s}
+      span{font-size: 25px; color:#fff; font-family:'Noto Sans KR', 'sans-serif'; word-break:keep-all;}
   }//mcdrive_info
   .mcdrive_info{
     position:absolute; bottom:40px; right:80px;
@@ -215,7 +215,6 @@ transform:translateX(-50%); font-size:0;
 }//.mcdrive
 
 .mcdrive_ani.active h4{transform:translateX(0);}
-.mcdrive_ani.active span{transform:translateX(0);}
 
 footer{background:#2C2A29;
   .footer_inner{
@@ -308,6 +307,9 @@ footer{background:#2C2A29;
     .bx-next{display:none;}
     }//#menu
     .mcdrive{
+      .mcdrive_info{right:0;
+        p{margin:15px auto;}
+      }
     .mcdrive_ani{
       h4{transform:translateX(0);}
     }
